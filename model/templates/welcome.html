@@ -1,0 +1,26 @@
+
+	{% extends "main.html" %}
+	{% block body%}
+	<div id="center_welcome">
+	</br>
+		<div id="backg">
+			     <div class="ribbon">    
+			        <h2>Welcome</h2>    
+			     </div>    
+			      <div class="ribbon_left"></div>
+			<div class="ribbon_right"></div>
+		</div>
+		</br>
+		<div id="zpicture_welcome">
+		<ul id="picture_welcome" class="example-orbit" data-orbit>
+		 <li> <img src="{{ static_url("img/img1.jpg")}}" alt="slide 1" />
+		  <div class="orbit-caption"> Caption One. </div> </li>
+		  <li class="active"> <img src="{{ static_url("img/img2.jpg")}}" alt="slide 2" /> 
+		  	<div class="orbit-caption"> Caption Two. </div> </li>
+		   <li> <img src="{{ static_url("img/img3.jpg")}}" alt="slide 3" />
+		    <div class="orbit-caption"> Caption Three. </div> </li> 
+		</ul>
+	</div>
+</div>
+
+	{% end %}

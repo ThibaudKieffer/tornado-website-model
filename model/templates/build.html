@@ -1,0 +1,252 @@
+
+	{% extends "main.html" %}
+	{% block body%}
+	<style>
+
+	#build_center{
+		width:1020px;
+		height:1900px;
+		margin-left:auto;
+		margin-right:auto;
+		border-left:9px orange ridge;
+		border-right:9px orange ridge;
+		margin-bottom:-30px;
+		background:url("../static/img/congruent_outline.png");
+	}
+
+	#build_ztext{
+		margin-left:102px;
+		width:800px;
+		min-height:700px;
+		border:1px grey;
+		box-shadow:2px 2px 10px black;
+		background:#C0C0C0;
+		border-radius:7px;
+		margin-bottom:80px;
+	}
+
+	#form_build{
+
+	}
+
+	#model{
+		border:3px black solid;
+		margin:10px;
+	}
+
+	#build_submit{
+		text-align:center;
+		font-size:18px;
+		margin-left:306px;
+	}
+
+	#contact_informations li {
+		display:inline-block;
+		list-style:none;
+		padding:0;
+	}
+
+	#zcontact_informations{
+		margin-left:10px;
+		margin-right:10px;
+		margin-top:30px;
+	}
+
+	#price_build{
+		font-size:30px;
+		color:#d00000;
+	}
+
+	#total_build{
+		font-size:30px;
+	}
+
+	#price_area{
+		margin-left:350px;
+		border:1px black solid;
+		width:340px;
+		height:58px;
+	}
+
+	#price_area li{
+		display:inline-block;
+		list-style:none;
+		padding:0;
+		margin-left:50px;
+	}
+
+	#build_h3 {
+		color:black;
+		font-size:30px;
+		text-align:center;
+		text-shadow:1px 1px 2px black;
+	}
+
+	#build1_h3 {
+		color:black;
+		font-size:30px;
+		text-align:center;
+		text-shadow:1px 1px 2px black;
+	}
+
+	#build2_h3 {
+		color:black;
+		font-size:30px;
+		text-align:center;
+		text-shadow:1px 1px 2px black;
+
+	}
+
+	#build_h2 {
+		text-align:center;
+		text-shadow:1px 1px 2px black;
+		font-weight: bold;
+	}
+
+	#s1{
+		width:400px;
+		text-align:center;
+		margin-left:186px;
+		font-size:18px;
+	}
+
+	#s2{
+		width:400px;
+		text-align:center;
+		margin-left:186px;
+		font-size:18px;
+	}
+
+	#s3{
+		width:400px;
+		text-align:center;
+		margin-left:186px;
+		font-size:18px;
+	}
+
+	#build_info{
+		font-size:17px;
+
+	}
+
+	.build_champs{
+		font-size:17px;
+		
+	}
+
+	#order_pictures{
+		margin-left:2.5px;
+		margin-right:2.5px;
+	}
+
+	</style>
+		<div id="build_center">
+			</br>
+				<div id="backg">
+			      <div class="ribbon">    
+			        <h2>Customise your order</h2>    
+			      </div>    
+			      <div class="ribbon_left"></div>
+			      <div class="ribbon_right"></div>
+				</div>
+				</br>
+				<div id="build_ztext">
+					</br>
+					<form id="form_build" name="form_build" method="post" action="/order">
+					<div id="model">
+						<h3 id="build_h3"> Part 1 </h3>
+					<ul id="order_pictures" class="clearing-thumbs small-block-grid-4" data-clearing>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 2 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 3 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 4 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+					</ul>
+						<select id="s1" name="s1" onChange="prix_art1(this.value);">		
+							<option id="v1" value="0"> Choose an option </option>
+							<option id="v2" value="5300"> Option1 5300€ </option>
+							<option id="v3" value="6000"> Option2 6000€ </option>
+							<option id="v4" value="6200"> Option3 6200€ </option>
+							<option id="v5" value="6900"> Option4 6900€ </option>
+							<option id="v6" value="6200"> Option5 6200€ </option>
+						</select>
+					</div>
+
+					<div id="model">
+						<h3 id="build_h3"> Part 2 </h3>
+					<ul id="order_pictures" class="clearing-thumbs small-block-grid-4" data-clearing>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 2 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 3 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 4 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+					</ul> 
+						<select id="s2" name="s2" onChange="prix_art2(this.value);">		
+							<option id="v7" value="0"> Choose an option </option>
+							<option id="v8" value="1500"> Option1 1500€ </option>
+							<option id="v9" value="2000"> Option2 2000€ </option>
+							<option id="v10" value="2200"> Option3 2200€ </option>
+							<option id="v11" value="2300"> Option4 2300€ </option>
+							<option id="v12" value="2500"> Option5 2500€ </option>
+						</select>
+						<ul id="order_pictures" class="clearing-thumbs small-block-grid-4" data-clearing>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 2 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 3 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 4 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						</ul>
+						<select id="s3" name="s3" onChange="prix_art3(this.value);">		
+							<option id="v13" value="0"> Choose an option </option>
+							<option id="v14" value="500"> Option1 500€ </option>
+							<option id="v15" value="600"> Option2 600€ </option>
+							<option id="v16" value="700"> Option3 700€ </option>
+							<option id="v17" value="800"> Option4 800€ </option>
+							<option id="v18" value="900"> Option5 900€ </option>
+						</select>
+					</div>
+					</br>
+					<h2 id="build_h2"> Add Accessories</h2>
+					</br>
+					<div id="model">
+						<h3 id="build1_h3"> Accessory 1 - 100€ </h3>
+						<ul id="order_pictures" class="clearing-thumbs small-block-grid-4" data-clearing>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 2 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 3 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 4 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						</ul>
+						<label>
+							<input type="checkbox" name="c1" id="c1" Onclick="prix_art4('c1');" value="100">Add to card 
+						</label>
+						<input type="checkbox" name="c1" id="c0" value="0" disable checked style="visibility:hidden">
+					</div>
+
+					<div id="model">
+						<h3 id="build2_h3"> Accessory 2 - 200€ </h3> 
+						<ul id="order_pictures" class="clearing-thumbs small-block-grid-4" data-clearing>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 2 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 3 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+							<li><a href="{{ static_url("img/earth.jpg")}}"><img data-caption="caption 4 here..." src="{{ static_url("img/earth.jpg")}}"></a></li>
+						</ul>
+						<label>
+							<input type="checkbox" name="c1" id="c2" Onclick="prix_art5('c2');" value="200">Add to card
+						<label>
+					</div>
+					</br>
+					<div id="zccontact_informations">
+						<ul id="price_area">
+							<li><p id="total_build"> Total Price </p></li>
+							<li><p id="price_build">0 €</p></li>
+					    </ul>
+					</br>
+					<ul id="contact_informations">
+						<li><label style="font-size:20px">Name<br><input style="font-size:18px" type="text" class="build_champs" name="nom" required></label></li>
+						<li><label style="font-size:20px">Email<br><input style="font-size:18px" type="email" name="mail" required></label></li>
+						<li><label style="font-size:20px">Phone Number<br><input style="font-size:16px" type="text" name="tel" required></label></li>
+						<input style="visibility:hidden" id="liste_articles" type="text" name="liste_articles">
+					<ul>
+					<input class="large button" name="build_submit" id="build_submit" Onclick="list_art();" value="Order" type="submit">
+					</form>
+					</div>
+				</div>
+		</div>
+	{% end %}

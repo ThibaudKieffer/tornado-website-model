@@ -1,0 +1,22 @@
+This website is programmed with python and the web framework tornado 4.1
+
+It's juste an exemple of website build with tornado, you can modify it if you want.
+
+For the dropdown menu the website use superfish: http://users.tpg.com.au/j_birch/plugins/superfish/
+For the design the website use Foundation 5: http://foundation.zurb.com/
+
+I create it with Debian wheezy and necessary packets are :
+
+The recommended Python version is 2.7 : sudo apt-get install python.
+
+Download and install pip at https://pip.pypa.io/en/latest/installing.html
+
+Install tornado with : sudo pip install tornado.
+
+Install email with : sudo pip install email.
+
+Launch the website with : python main.py.
+
+Create a mandrill account at http://mandrill.com/ or use an other SMTP service.
+Modify main.py and add your mandrill account and API KEY for SMTP automatic mail service.
+

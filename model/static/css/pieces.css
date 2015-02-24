@@ -1,0 +1,94 @@
+#tab_pieces{
+	text-decoration:none;
+}
+
+#tab_pieces li{
+	display:inline-block;
+	padding:0;
+}
+
+#id_tab{
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+
+}
+
+#nom_tab{
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+}
+
+#ref_tab{
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+}
+
+#prix_tab{
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+}
+
+#paiement_tab{
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+}
+
+#id_ligne{
+	font-weight:italic;
+	text-align:center;
+}
+
+#ref_ligne{
+	text-align:center;
+}
+
+#prix_ligne{
+	text-align:center;
+}
+
+#paiement_ligne{
+	text-align:center;
+}
+
+#tableau{
+	min-width:990px;
+}
+#ztexte_pieces{
+	margin-left:6px;
+	width:990px;
+	min-height:300px;
+	border:1px grey;
+	box-shadow:2px 2px 10px black;
+	background:#C0C0C0;
+	border-radius:7px;
+	margin-bottom:30px;
+
+}
+
+#fk_tableau{
+	max-width:990px;
+}
+
+#fk_titres{
+	text-align:center;
+	font-size:9px;
+}
+
+#fk_lignes{
+	font-size:9px;
+}
+
+#centre_pieces{
+	width:1020px;
+	height:800px;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:9px orange ridge;
+	border-right:9px orange ridge;
+	background:url("../img/congruent_outline.png");
+}

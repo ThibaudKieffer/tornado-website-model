@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+	 
+<head>
+	<title>Website Model</title>
+	<!-- CSS scripts for superfish, foundation and web pages -->
+	<link rel="stylesheet" href="{{ static_url("css/normalize.css")}}"/> 
+   <link rel="stylesheet" href="{{ static_url("css/foundation.css")}}">
+   	<script src="{{ static_url("js/vendor/modernizr.js")}}"></script>
+   	<script src="{{ static_url("js/vendor/jquery.js") }}"></script>
+	<link rel="stylesheet" href="{{ static_url("css/style.css") }}" />
+	<link rel="stylesheet" href="{{ static_url("css/body.css") }}" />
+	<link rel="stylesheet" href="{{ static_url("css/pieces.css") }}" />
+	<link rel="stylesheet" href="{{ static_url("css/superfish.css") }}" />
+	<script src="{{ static_url("jquery/superfish.js") }}"></script>
+	<script type="application/javascript">
+	jQuery(document).ready(function(){
+		jQuery('ul.sf-menu').superfish();
+			});
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div id="header" >
+			<h1 id="title">Website Model</h1>
+			<img id="logo" src="{{ static_url("img/logo.png")}}" alt="add your logo">
+			<a href="https://www.youtube.com"><img id="l1" src="{{ static_url("img/youtube.png")}}"></a>	
+			<a href="https://www.facebook.com"><img href="/produits" id="l2" src="{{ static_url("img/facebook_logo.gif")}}"></a>	
+</div>
+
+<div id="header_down">
+		
+		<ul class="sf-menu" id="buttons">
+				<li><a href="/">Welcome</a></li>			
+				<li class="current"><a>Informations</a>
+					<ul>
+						<li><a>Product Informations</a>
+							<ul>
+								<li><a href="/">Example1</a></li>
+								<li><a href="/">Example2</a></li>
+							</ul>
+						</li>
+						<li><a>Technical Informations</a>
+							<ul>
+								<li ><a href="/">Example1</a></li>
+								<li><a href="/">Example2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="current"><a>Media</a>
+					<ul>
+						<li><a href="/pictures">Pictures</a></li>
+						<li><a href="/videos">Videos</a></li>
+					</ul>
+				</li>
+				<li class="current"><a>Order</a>
+					<ul>
+						<li><a href="/build">Customise</a></li>
+						<li><a href="/accessories">Accessories</a></li>
+					</ul>
+				</li>
+				<li class="current"><a href="/contact">Contact</a></li>	
+		</ul>			
+		</div>
+</head>
+	<body>
+			<!-- Web pages are insert here -->
+			{% block body %}{% end %}
+	<!-- foundation and others js scripts are inserted in the bottom because they blocks the page loading -->
+	<script async src="{{ static_url("js/prix.js") }}"></script>
+   	<script src="{{ static_url("jquery/hoverIntent.js") }}"></script>
+	<script src="{{ static_url("js/foundation.min.js") }}"></script>
+	<script type="application/javascript">
+		$(document).foundation();
+	</script>
+
+	</body>
+
+	<footer id="bottom">
+				<ul id="links">
+					<li><a href="/">Welcome</a></li>
+					<li><p> | </p></li>			
+					<li><a href="https://www.youtube.com">Youtube</a></li>
+					<li><p> | </p></li>
+					<li><a href="https://www.facebook.com">Facebook</a></li>
+					<li><p> | </p></li>
+					<li><a href="/build">Order</a></li>
+					<li><p> | </p></li>
+					<li><a href="/contact">Contact</a></li>	
+				</ul>
+	</footer>
+</html>
