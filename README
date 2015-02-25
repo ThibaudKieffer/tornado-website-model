@@ -5,7 +5,9 @@ It's juste an example of website build with tornado, you can modify it if you wa
 For the dropdown menu it use superfish: http://users.tpg.com.au/j_birch/plugins/superfish/
 For the design it use Foundation 5: http://foundation.zurb.com/
 
-I create it with Debian wheezy and necessary packets are :
+I created it with Debian Wheezy.
+
+Necessary packets are :
 
 - Python version is 2.7 : sudo apt-get install python.
 - Pip (Download and install it with instructions at https://pip.pypa.io/en/latest/installing.html).
